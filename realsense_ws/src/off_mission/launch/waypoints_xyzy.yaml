@@ -1,0 +1,31 @@
+# param: value
+
+# off_mission param
+uav_id: 1
+outdoor_indoor_flag: 0   # 1 for indoor, 0 for outdoor
+takeoff_hight: 1.0     # takeoff hight above current current relative.
+nav_acc_radius: 0.2
+nav_acc_angle: 0.125
+
+cruise_hight: 5.0  # waypoint cruise hight
+waypoint_width: 4.0 # waypoint square length
+
+local_global_flag : 1  # 1 for local, 0 for global
+
+waypoints:
+# ENU frame: x, y z, yaw
+# numbers must in x.x format(i.e: 5.0)
+# the last waypoint (land point) is suggested to be 3 m above ground, LAND is triggered after the last waypoint is reached
+# at least two waypoints must be specified
+- [ 0.0,       0.0,        1.0,   0.0]
+
+
+# param: value
+gps_waypoints:
+# GPS: latitude, longitude, altitude, yaw (ENU)
+# numbers must in x.x format(i.e: 5.0)
+- [ 47.397700,    8.545500,        550.0,   0.06]
+#- [ 47.397799,    8.545500,        550.0,   -0.03]
+#- [ 47.397799,    8.545599,        550.0,   -2.98]
+#- [ 47.397700,    8.545599,        550.0,   3.12]
+#- [ 47.397700,    8.545500,        550.0,   3.12]

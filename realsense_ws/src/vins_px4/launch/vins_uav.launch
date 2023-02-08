@@ -1,0 +1,14 @@
+<launch>
+
+
+
+
+	<node pkg="vins_px4" type="vins_uav_node" name="vins_uav_node" output="screen">
+	</node>
+
+
+
+
+
+
+</launch>
